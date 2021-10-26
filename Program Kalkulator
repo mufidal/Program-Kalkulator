@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+float a,b,hasil;
+char aritmatika;
+/*Muhammad Mufid Al-Dayyan
+21/480405/TK/52969*/
+int main()
+{
+    //OPENING
+    cout<<"=======================================\n";
+    cout<<"\tProgram Kalkulator Mufid\n";
+    cout<<"======================================="<<endl;
+    cout<<"(Operator yang digunakan : +,-,*,/)\n";
+    //INPUT PENGGUNA
+    cout<<"\nMasukkan bilangan pertama : ";
+    cin>>a;
+    cout<<"Masukkan bilangan kedua   : ";
+    cin>>b;
+    cout<<"(Masukkan operator)\n";
+    cout<<"------------------------------";
+    cout<<aritmatika;
+    cin>>aritmatika;
+    //KODE PERHITUNGAN
+    cout<<"Hasil Perhitungan         : ";
+    if(aritmatika=='+'){
+        hasil=a+b;}
+    else if(aritmatika=='-'){
+        hasil=a-b;}
+    else if(aritmatika=='*'){
+        hasil=a*b;}
+    else if(aritmatika=='/'){
+        hasil=a/b;}
+    else {
+        cout<<"input anda salah";
+    }
+cout<<hasil<<endl;
+    return 0;
+}
